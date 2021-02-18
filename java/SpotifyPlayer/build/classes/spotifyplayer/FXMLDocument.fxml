@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spotifyplayer.FXMLDocumentController">
+    <children>
+        <Button fx:id="playButton" layoutX="15.0" layoutY="394.0" onAction="#handlePlayButtonAction" prefHeight="17.0" prefWidth="47.0" text="Play" />
+      <Slider fx:id="trackSlider" layoutX="76.0" layoutY="400.0" max="30.0" onMouseDragged="#handledTrackSliderMouseDrag" onMousePressed="#handledTrackSliderMouseClicked" onMouseReleased="#handledTrackSliderMouseReleased" prefHeight="14.0" prefWidth="458.0" />
+      <ImageView fx:id="albumCoverImageView" fitHeight="256.0" fitWidth="256.0" layoutX="14.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="trackTimeLabel" layoutX="534.0" layoutY="399.0" prefHeight="17.0" prefWidth="77.0" text="90:00 / 90:00" />
+      <Label alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="97.0" prefWidth="600.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tracksTableView" layoutX="277.0" layoutY="149.0" prefHeight="224.0" prefWidth="342.0">
+        <columns>
+          <TableColumn prefWidth="28.0" text="#" />
+          <TableColumn prefWidth="313.0" text="Title" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchArtistTextField" layoutX="305.0" layoutY="117.0" onAction="#handleSearchButtonAction" prefHeight="25.0" prefWidth="286.0" promptText="Search for artist..." />
+      <Label fx:id="artistLabel" layoutX="26.0" layoutY="18.0" prefHeight="62.0" prefWidth="589.0" text="Artist">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="albumLabel" layoutX="26.0" layoutY="71.0" prefHeight="35.0" prefWidth="589.0" text="Album Title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="previousAlbumButton" layoutX="277.0" layoutY="117.0" mnemonicParsing="false" onAction="#handlePreviousButtonAction" prefHeight="25.0" prefWidth="28.0" text="&lt;" />
+      <Button fx:id="nextAlbumButton" layoutX="591.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleNextButtonAction" prefHeight="25.0" prefWidth="28.0" text="&gt;" />
+      <ProgressIndicator fx:id="progress" layoutX="513.0" layoutY="23.0" prefHeight="77.0" prefWidth="99.0" visible="false" />
+      <Button fx:id="saveButton" layoutX="3.0" layoutY="440.0" onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="182.0" text="Save current album's picture" />
+      <Button fx:id="saveAllButton" layoutX="225.0" layoutY="440.0" onAction="#handleSaveAllButtonAction" prefHeight="25.0" prefWidth="160.0" text="Save all albums' picture" />
+    </children>
+</AnchorPane>

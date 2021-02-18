@@ -1,0 +1,141 @@
+body
+{
+	background-color: #f2f2f2;
+}
+
+div.container
+{
+	width: 57%;
+	background-color: #FFFFFF;
+	border-radius: 1em;
+
+}
+
+table.chat
+{
+	border-radius: 1em;
+	background-color: white;
+	width: 100%;
+	border-collapse:separate; 
+  	border-spacing: 0 1em;
+  	overflow-y: scroll;
+  	height: 700px;
+  	display: block;
+}
+
+h1.block
+{
+	width: 96%;
+}
+
+img.block
+{
+	float:right;
+	margin-top: 5px;
+}
+
+td
+{
+	width: 100%;
+}
+
+td.sender
+{
+	text-align: right;
+	padding-right: 10px;
+}
+
+td.receiver
+{
+	padding-left: 10px;
+}
+
+.sender-bubble
+{
+	background-color: #eba834;
+}
+
+.receiver-bubble
+{
+	background-color: #c2beb6;
+}
+/*
+td.sender
+{
+	text-align: right;
+	background-color: #eba834;
+	padding-right: 10px;
+
+}
+
+td.receiver
+{
+	background-color: #c2beb6;
+	padding-left: 10px;
+}
+*/
+
+p
+{
+	flex-wrap: wrap;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right:10px;
+	white-space: nowrap;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+img
+{
+	float: left;
+	margin-left: 5px;
+}
+
+.time
+{
+	display: inline-block;
+	font-size: 10px;
+	background-color: transparent;
+}
+
+.speech-bubble {
+	padding-top: 5px;
+	border-spacing: 0 1em;
+	position: relative;
+	background: #transparent;
+	border-radius: 1em;
+	display: inline-block;
+	transition: background-color .5s;
+}
+
+.speech-bubble:hover {
+	background-color: gold;
+}
+
+.inputs
+{
+	overflow: hidden;
+	margin-top: 1em;
+	margin-right: 5em;
+}
+
+/*
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 1.156em solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -0.578em;
+	margin-bottom: -1.156em;
+}
+*/
+}

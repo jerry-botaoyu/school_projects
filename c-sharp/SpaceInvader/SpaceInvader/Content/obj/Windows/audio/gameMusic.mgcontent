@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/cstuser/Desktop/SpaceInvader/SpaceInvader/Content/audio/gameMusic.mp3</SourceFile>
+  <SourceTime>2019-12-06T15:53:14.3123731-05:00</SourceTime>
+  <DestFile>C:/Users/cstuser/Desktop/SpaceInvader/SpaceInvader/Content/bin/Windows/audio/gameMusic.xnb</DestFile>
+  <DestTime>2019-12-06T15:53:39.4769635-05:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2017-03-01T10:05:36-05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/cstuser/Desktop/SpaceInvader/SpaceInvader/Content/bin/Windows/audio/gameMusic.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>
